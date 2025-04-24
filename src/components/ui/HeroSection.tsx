@@ -24,7 +24,7 @@ const HeroSection = () => {
             }`}
           >
             <span className="inline-block px-4 py-2 rounded-full bg-primary-100 text-primary-600 text-sm font-medium mb-6">
-              Introducing SESSI Event Management
+              Introducing Event Spark Event Management
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
