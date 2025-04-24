@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to EventSpark
 
 **URL**: https://event-spark-tau.vercel.app/
 
