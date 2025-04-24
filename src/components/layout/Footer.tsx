@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import logo from "../../../public/favicon.ico";
 
 const Footer = () => {
   return (
@@ -8,14 +9,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and description */}
           <div className="md:col-span-1">
-            <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-lg">E</span>
-              </div>
-              <span className="font-poppins font-bold text-xl text-white">
-                EventSpark
-              </span>
-            </Link>
+          <Link to="/" className="flex items-center space-x-2">
+          <div>
+            <img src={logo} alt="logo" className="w-8 h-8" />
+          </div>
+          <span className="font-poppins font-bold text-xl text-white-900">
+          Event
+          <span style={{ color: "#0052CC" }}>Spark</span>
+        </span>
+
+        </Link>
             <p className="text-gray-400 text-sm">
               EventSpark - Revolutionizing event creation and management for educational institutions.
             </p>
