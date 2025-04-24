@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Flame } from "lucide-react";  // Changed from CalendarPlus to Flame
+import logo from "../../../public/favicon.ico"
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,15 +31,16 @@ const Navbar = () => {
     >
       <div className="container-padding mx-auto">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <Flame className="h-6 w-6 text-white" />
-            </div>
-            <span className="font-poppins font-bold text-xl text-gray-900">
-              EventSpark
-            </span>
-          </Link>
+        <Link to="/" className="flex items-center space-x-2">
+  <div>
+    <img src={logo} alt="logo" className="w-8 h-8" /> {/* 👈 Adjust the size here */}
+  </div>
+  <span className="font-poppins font-bold text-xl text-gray-900">
+  Event
+  <span style={{ color: "#0052CC" }}>Spark</span>
+</span>
+
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
